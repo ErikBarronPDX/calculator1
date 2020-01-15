@@ -1,17 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="js/jquery1.9.1.js"></script>
-    <script src="js/scripts.js"></script>
-    <link rel="stylesheet" href="css/styles.css " type="text/css">
-    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
-    <title>Calculator</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<script src="js/jquery-1.9.1.js"></script>
+	<script src="js/scripts.js"></script>
+	<link rel="stylesheet" href="css/styles.css " type="text/css">
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+  <title>Calculator</title>
 </head>
 
 <body>
-    <h1>Calculator</h1>
+  <div class="container">
+		<h1>Calculator</h1>
+		<form id="add">
+			<div class="form-group">
+				<label for="add1">1st number:</label>
+				
+				<input id="add1" class="form-control" type="text">
+			</div>
+			<div>
+				<label for="add2">2nd number:</label>
+				<input id="add2" class="form-control" type="text">
+			</div>
+			<button type="submit" class="btn">Add!</button>
+		</form>
+		
+		<div id="output">
+			
+		</div>
+
+  </div>
 </body>
 </html>
