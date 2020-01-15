@@ -21,12 +21,23 @@ $(document).ready(function(){
   $("form#add").submit(function(event){
 
     event.preventDefault();
-    var number1 = parseInt($("#add1").val());
-    var number2 = parseInt($("#add2").val());
-    var result = add(number1, number2);
-    $("#output").text(result);
-    
+    var addNumber1 = parseInt($("#add1").val());
+    var addNumber2 = parseInt($("#add2").val());
+    var addResult = add(addNumber1, addNumber2);
+    $("#addOutput").text(addResult);
+
   });
+
+
+  $("form#subtract").submit(function(event){
+
+    event.preventDefault();
+    var subtractNumber1 = parseInt($("#subtract1").val());
+    var subtractNumber2 = parseInt($("#subtract2").val());
+    var subtractResult = subtract(subtractNumber1, subtractNumber2);
+    $("#subtractOutput").text(subtractResult);
+
+  })
 
 });
 
